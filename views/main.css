@@ -1,0 +1,21 @@
+body {
+    background-color: lightblue;
+    text-align: center;
+}
+
+h1 {
+    font-size: webkit-xxx-large;
+}
+
+ul {
+    list-style: none;
+}
+
+.todo-list li {
+    margin-bottom: 1rem;
+    text-decoration: line-through;
+}
+
+.status:checked + span {
+    text-decoration: line-through;
+}
