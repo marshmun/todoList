@@ -10,14 +10,14 @@
 </head>
 
 <body>
-    <h1 class=title method=post>Your Rad Todo list</h1>
+    <h1 class=title method=post>Your Rad To-do list</h1>
     <form action="/" method="POST">
-        <input name="todos" type="text">
+        <input name="taskTitle" type="text">
         <input type="submit">
     </form>
 
     <ul>{{#todos}}
-        <li><input class="status" type="checkbox"><span> {{.}}</span></li>
+        <li><input class="status" type="checkbox"><span> {{title}}</span></li>
 
         {{/todos}}
     </ul>
