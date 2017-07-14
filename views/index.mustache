@@ -17,7 +17,15 @@
     </form>
 
     <ul>{{#todos}}
-        <li><input class="status" type="checkbox"><span> {{title}}</span></li>
+        <div>
+            {{title}}
+            <form action="/update/{{id}}" methond="GET">
+                <button type="submit">update this todo!</button>
+            </form>
+            <form action="/delete-post" method="post">
+                <button type="submit" name="id" value={{id}}> delete this post!</button>
+            </form>
+        </div>
 
         {{/todos}}
     </ul>

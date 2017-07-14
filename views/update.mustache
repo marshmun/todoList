@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>update</title>
+</head>
+
+<body>
+    {{#updatethis}}
+    <h2> update your current todo!</h2>
+    <form action="/update/{{id}}" method="POST">
+        <input type="text" name="title" placeholder="update the current Todo">
+        <input type="submit">
+    </form>
+    {{title}} {{/updatethis}}
+</body>
+
+</html>
